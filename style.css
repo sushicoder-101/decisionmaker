@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.input-section {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 10px;
+}
+
+#optionInput {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid #e1e5e9;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+#optionInput:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+#addBtn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+#addBtn:hover {
+    background: #5a6fd8;
+}
+
+.options-section {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.options-section h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#optionsList {
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#optionsList li {
+    background: #f8f9fa;
+    margin: 8px 0;
+    padding: 12px 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+#optionsList li:hover {
+    background: #e9ecef;
+}
+
+.option-text {
+    flex: 1;
+}
+
+.remove-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.remove-btn:hover {
+    background: #c82333;
+}
+
+#clearAllBtn {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+#clearAllBtn:hover {
+    background: #5a6268;
+}
+
+.decision-section {
+    text-align: center;
+}
+
+#decideBtn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s;
+}
+
+#decideBtn:hover:not(:disabled) {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+#decideBtn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#result {
+    margin-top: 1rem;
+}
+
+.decision-result {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.show-result .decision-result {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.decision-result h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.selected-option {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+    
+    .input-section {
+        flex-direction: column;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}

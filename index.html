@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt's Random Decision Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Matt's Random Decision Maker</h1>
+        <p class="subtitle">Can't decide? Let randomness choose for you!</p>
+        
+        <div class="input-section">
+            <input type="text" id="optionInput" placeholder="Enter an option (e.g., Pizza, Sushi, Tacos)" />
+            <button id="addBtn">Add Option</button>
+        </div>
+        
+        <div class="options-section">
+            <h3>Your Options:</h3>
+            <ul id="optionsList"></ul>
+            <button id="clearAllBtn" style="display: none;">Clear All</button>
+        </div>
+        
+        <div class="decision-section">
+            <button id="decideBtn" disabled>Make Decision!</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
