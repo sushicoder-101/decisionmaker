@@ -11,10 +11,6 @@ A simple web application that helps you make random decisions when you can't cho
 - 📱 Responsive design for mobile and desktop
 - ⚡ No dependencies - pure vanilla JavaScript
 
-## Demo
-
-![Demo Screenshot](demo.png)
-
 ## Getting Started
 
 ### Prerequisites
